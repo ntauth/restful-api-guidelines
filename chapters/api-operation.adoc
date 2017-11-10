@@ -29,6 +29,10 @@ Please note that in the later case a shell has to be installed in the docker
 container. Alternatively, you can create empty `no-apis` file locally and
 make use of Docker `COPY` command in Dockerfile.
 
+We prefer this publishing method over the legacy `.well-known` endpoint-based
+discovery process. However, we support this way for backward compatibility
+reasons.
+
 We distinguish between internal and external APIs of an application
 which is owned by a specific team and often implemented via small set of
 services. An external API is used by clients outside the team - usually
